@@ -1,0 +1,111 @@
+body {
+    /*background-color: #E7EFEC;*/
+}
+
+h2 {
+    font-weight: normal;
+}
+
+.wine-div {
+    display: grid;
+    grid-template-columns: .2fr 1fr .1fr;
+    width: 75%;
+    background-color: white;
+    margin: 1em auto;
+    border-radius: .3em;
+    cursor: pointer;
+    border-top-width: thin!important;
+}
+
+.img-div {
+    display: flex;
+}
+
+.img-div img {
+    margin: auto;
+    display: block;
+    height: 10em;
+}
+
+.wine-country-div {
+    display: flex;
+}
+
+.wine-country-div img {
+    height: 2em;
+    margin: auto .5em auto 0;
+}
+
+.wine-amount {
+    display: flex;
+}
+
+.wine-amount p {
+    margin: auto;
+    font-weight: bold;
+    font-size: 30pt;
+}
+
+#context-menu {
+  position: fixed;
+  z-index: 2;
+  /*width: 150px;
+  background: #efefef;
+  border-radius: .2rem;*/
+  display: none;
+  cursor: pointer;
+  /*border: 1px solid #aaa*/
+}
+
+#context-menu.visible {
+    display: block;
+}
+
+#context-menu .item {
+padding: 8px 10px;
+font-size: 15px;
+cursor: pointer;
+border-radius: inherit;
+}
+
+#context-menu .item:hover {
+    background: #fff;
+}
+
+.modal-dialog {
+    width: 34em;
+    height: 20em;
+    top: 50%;
+    margin-top: -10em;
+    left: 50%;
+    margin-left: -17em;
+}
+
+.modal-content {
+    background-color: #fff;
+    padding: 1em;
+    height: inherit;
+    padding-bottom: 2em;
+}
+
+.popup-dialog {
+    display: none;
+    position: fixed;
+    z-index: 3;
+    height: 100%;
+    width: 100%;
+    top:0;
+    background-color: rgba(0, 0, 0, 0.3);;
+}
+
+.form-wine {
+    display: none;
+}
+
+.wine-country-text {
+    margin: auto 0;
+}
+
+.wine-country-text p {
+    margin: 0;
+}
